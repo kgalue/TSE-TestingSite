@@ -9,7 +9,7 @@
 
     <!--Drift Install-->
     <script src="./main.js"></script> 
-    
+
     <script>
     drift.on('ready', function(){
         let request = new XMLHttpRequest();
@@ -21,6 +21,8 @@
      
         if (data.country_name != 'Not Found')
        {
+          console.log("Value of country_name: " + data.country_name)
+          console.log("Value of country_code: " + data.country_code)
           drift.api.setUserAttributes({
             custom_country_code: data.country_code,
             custom_country: data.country_name
