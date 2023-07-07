@@ -20,14 +20,14 @@
           let data = JSON.parse(this.response);
      
         if (data.country_name != 'Not Found' && data.country_name != 'Not found')
-       {
+        {
           console.log("Value of country_name: " + data.country_name)
           console.log("Value of country_code: " + data.country_code)
           drift.api.setUserAttributes({
             custom_country_code: data.country_code,
             custom_country: data.country_name
           });
-         }
+        } //end of if statement
         }
         };
         request.send();
