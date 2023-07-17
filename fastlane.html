@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fastlane Workshop  </title>
     <link rel="stylesheet" href="style.css">
-
+    <script>
+      window.drift.on("scheduling:meetingBooked", function(data) {
+        console.log("Meeting Booked: " + data.teamMember.name);
+        drift.api.setUserAttributes({
+        _classification: "Fastlane - meeting booked"
+    })
+   });
+    </script>
    
     
    
