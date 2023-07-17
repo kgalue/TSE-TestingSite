@@ -25,6 +25,12 @@
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('y9vf8wusrym9');
 
+window.drift.on("scheduling:meetingBooked", function(data) {
+  console.log("Meeting Booked: " + data.teamMember.name);
+  drift.api.setUserAttributes({
+  _classification: "Fastlane - meeting booked"
+})
+});
 
 
 //LoadDriftWidget.init();
