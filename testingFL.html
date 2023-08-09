@@ -33,7 +33,11 @@
     }();
     drift.SNIPPET_VERSION = '0.3.1';
     drift.load('yczyctb7ww9c');
-    drif.api.widget.show();
+    drift.on('ready',function(api, payload) {
+ // interact with the api here
+ drift.api.widget.show();
+})
+    
     </script>
     <!-- End of Async Drift Code -->
 
