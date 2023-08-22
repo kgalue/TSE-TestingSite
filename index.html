@@ -25,10 +25,23 @@
             <li><a href="ga.html">GA</a></li>
         </ul>
     </div>
+    <div>
+      <button name="button" id="button_to_launch_drift" type="button">Fire Drift</button>  
+<script>var button = document.getElementById('button_to_launch_drift');
+    button.addEventListener('click', function() {
+      drift.api.startInteraction({ 
+        interactionId: 351650,
+        goToConversation: true, //(boolean, default: true) Determines if the playbook should auto-expand the chat when fired. Set this to false if you want the playbook to show a preview message instead of popping it open.
+        replaceActiveConversation: true 
+       });
+    });
+</script>
+    </div>
   </nav>
 
   <!--===================END OF NAV BAR ==================================-->
 
+  <script src="./main.js"></script> 
   <script src="./main.js"></script> 
 
 </body>
