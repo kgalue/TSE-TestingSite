@@ -42,6 +42,21 @@ window.drift.on("conversation:playbookFired", function(data) {
   console.log("Playbook fired: " + JSON.stringify(data))
 })
 
+window.drift.on("message", function(data) {
+  console.log("User received a message from ' + data.teamMember.name + ' in conversation " + data.conversationId);
+});
+
+window.drift.on("conversation:playbookClicked", function(data) {
+  console.log("Playbook Clicked fired");
+});
+
+window.drift.on("conversation:playbookDismissed", function(data) {
+  console.log("Playbook Dismissed fired");
+});
+
+window.drift.on("conversation:firstInteraction", function(data) {
+  console.log("First interaction: " + JSON.stringify(data))
+});
 
 window.drift.on("scheduling:meetingBooked", function(data) {
   console.log("Meeting Booked: " + data.teamMember.name);
