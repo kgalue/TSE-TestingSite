@@ -38,6 +38,10 @@ let myJWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYngtMTIzIiwibmFtZS
 
 drift.load('y9vf8wusrym9');
 
+window.drift.on("conversation:playbookFired", function(data) {
+  console.log("Playbook fired: " + JSON.stringify(data))
+})
+
 
 window.drift.on("scheduling:meetingBooked", function(data) {
   console.log("Meeting Booked: " + data.teamMember.name);
