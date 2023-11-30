@@ -54,6 +54,10 @@ window.drift.on("conversation:playbookDismissed", function(data) {
   console.log("Playbook Dismissed fired");
 });
 
+window.drift.on("conversation:playbookClicked", function(data) {
+  console.log("Playbook Clicked fired");
+});
+
 window.drift.on("conversation:firstInteraction", function(data) {
   console.log("First interaction: " + JSON.stringify(data))
 });
