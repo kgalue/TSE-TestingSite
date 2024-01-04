@@ -7,6 +7,8 @@
     <title>TSE Workshop  </title>
     <link rel="stylesheet" href="style.css">
 
+    <script src="./main.js"></script> 
+
     
 
   
@@ -31,6 +33,13 @@
       <h1>
         Testing!
       </h1>
+      <script>
+      drift.on('ready', function(api) {
+        drift.api.setUserAttributes({
+          carYear: new URLSearchParams(window.location.search).get('year')
+        });
+      });
+    </script>
     </div>
     <div>
       <button name="button" id="button_to_launch_drift" type="button">Fire Drift</button>  
@@ -48,7 +57,6 @@
 
   <!--===================END OF NAV BAR ==================================-->
 
-  <script src="./main.js"></script> 
 
 
 </body>
