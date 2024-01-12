@@ -33,28 +33,14 @@
     </div>
     <div>
       <h1>
-        Testing!
+        Testing Deferred Form Submission!
       </h1>
-      <script>
-      drift.on('ready', function(api) {
-        drift.api.setUserAttributes({
-          carYear: new URLSearchParams(window.location.search).get('year')
-        });
-      });
-    </script>
-    </div>
-    <div>
-      <button name="button" id="button_to_launch_drift" type="button">Fire Drift</button>  
-<script>var button = document.getElementById('button_to_launch_drift');
-    button.addEventListener('click', function() {
-      drift.api.startInteraction({ 
-        interactionId: 351650,
-        goToConversation: true, //(boolean, default: true) Determines if the playbook should auto-expand the chat when fired. Set this to false if you want the playbook to show a preview message instead of popping it open.
-        replaceActiveConversation: true 
-       });
-    });
-</script>
-    </div>
+      <div>
+        <script src="//844-RKG-112.mktoweb.com/js/forms2/js/forms2.min.js"></script> 
+        <form id="mktoForm_1081"></form> 
+        <script>MktoForms2.loadForm("//844-RKG-112.mktoweb.com", "844-RKG-112", 1081);</script>
+      
+      </div>
   </nav>
 
   <!--===================END OF NAV BAR ==================================-->
