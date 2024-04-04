@@ -30,13 +30,25 @@
     </script>
 
     <script>
-      window.addEventListener("message", function(event) {
+  window.addEventListener("message", function(event) {
     if(event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmit') {
+      var emailField = event.data.data.find(function (field) {
+        return field.name === "email";
+      });
+      var submittedEmail = emailField.value;
+      console.log("Email is: " + submittedEmail);
+
      var fnField = event.data.data.find(function (field) {
         return field.name === "firstname";
       });
       var submittedFirstName = fnField.value;
       console.log("First name is: " + submittedFirstName);
+
+     var lnField = event.data.data.find(function (field) {
+        return field.name === "lastname";
+      });
+      var submittedLastName = lnField.value;
+      console.log("Last name is: " + submittedLastName);
     }
   });
     </script>
