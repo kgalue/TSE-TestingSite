@@ -49,6 +49,16 @@
       });
       var submittedLastName = lnField.value;
       console.log("Last name is: " + submittedLastName);
+
+      //SetUserAttributes
+      drift.on('ready', function() {
+       drift.api.setUserAttributes({
+          email: submittedEmail,
+          first_name: submittedFirstName,
+          last_name: submittedLastName
+        })
+    })
+
     }
   });
     </script>
