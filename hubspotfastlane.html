@@ -28,6 +28,18 @@
         formId: "7649e5b7-6565-43b1-a2b6-09203fd3465c"
         });
     </script>
+
+    <script>
+      window.addEventListener("message", function(event) {
+    if(event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmit') {
+     var fnField = event.data.data.find(function (field) {
+        return field.name === "firstname";
+      });
+      var submittedFirstName = firstnameField.value;
+      console.log("First name is: " + submittedFirstName);
+    }
+  });
+    </script>
   </div>
 
 
