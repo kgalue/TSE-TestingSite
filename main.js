@@ -36,7 +36,13 @@ let myJWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYngtMTIzIiwibmFtZS
   lastName: "Samoyed"
 }, { userJwt: myJWT });*/
 
-drift.load('y9vf8wusrym9');
+//Karla's drift.load('y9vf8wusrym9');
+drift.load('27b83herk5tv');
+
+
+drift.on('ready',function(api, payload) {
+  drift.api,widget.show();
+})
 
 window.drift.on("conversation:playbookFired", function(data) {
   console.log("Playbook fired: " + JSON.stringify(data))
