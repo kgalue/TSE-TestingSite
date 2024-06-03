@@ -19,38 +19,39 @@
 
     <script src="./main.js"></script> 
 
+    <nav>
+      <div class="bar">
+          <a href="index.html/#testingapi" class="logo"><img src="./img/Drift Icon.png" alt="logo"></a>
+  
+          <!--Linking Pages -->  
+          <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="fastlane.html">Fastlane Manual</a></li>
+              <li><a href="widget.html">Vanilla Widget</a></li>
+              <li><a href="ga.html">GA</a></li>
+              <li><a href="fastlaneQS.html">Fastlane Quick Setup</a></li>
+              <li><a href="embeddedCLP.html">Embedded CLP</a></li>
+              <li><a href="thankyou.html">Thank you</a></li>
+              <li><a href="deferred.html">Deferred Form</a></li>
+          </ul>
+      </div>
+      <div>
+        <h1>
+          Testing!
+        </h1>
+        <script>
+        drift.on('ready', function(api) {
+          drift.api.setUserAttributes({
+            carYear: new URLSearchParams(window.location.search).get('year')
+          });
+        });
+      </script>
+      </div>
+      </nav>
   
 </head>
 <body>
-  <nav>
-    <div class="bar">
-        <a href="index.html/#testingapi" class="logo"><img src="./img/Drift Icon.png" alt="logo"></a>
-
-        <!--Linking Pages -->  
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="fastlane.html">Fastlane Manual</a></li>
-            <li><a href="widget.html">Vanilla Widget</a></li>
-            <li><a href="ga.html">GA</a></li>
-            <li><a href="fastlaneQS.html">Fastlane Quick Setup</a></li>
-            <li><a href="embeddedCLP.html">Embedded CLP</a></li>
-            <li><a href="thankyou.html">Thank you</a></li>
-            <li><a href="deferred.html">Deferred Form</a></li>
-        </ul>
-    </div>
-    <div>
-      <h1>
-        Testing!
-      </h1>
-      <script>
-      drift.on('ready', function(api) {
-        drift.api.setUserAttributes({
-          carYear: new URLSearchParams(window.location.search).get('year')
-        });
-      });
-    </script>
-    </div>
-    <div>
+  
       <button name="button" id="button_to_launch_drift" type="button">Fire Drift</button>  
 <script>var button = document.getElementById('button_to_launch_drift');
     button.addEventListener('click', function() {
@@ -70,8 +71,8 @@
   <iframe
   src="https://TSEtest.drift.click/embed/283085/5047474"
   id="drift-embed-frame"
-  height="100%"
-  width="100%"
+  height="500px"
+  width="500px"
   frameborder="0"
 ></iframe>
 </div>
