@@ -34,7 +34,7 @@ let myJWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYngtMTIzIiwibmFtZS
   Name: 'Stark',
   firstName: "Stark",
   lastName: "Samoyed"
-}, { userJwt: myJWT });
+})//, { userJwt: myJWT });
 
 drift.load('y9vf8wusrym9');
 
