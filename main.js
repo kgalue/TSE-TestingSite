@@ -25,7 +25,7 @@
 drift.SNIPPET_VERSION = '0.3.1';
 
 //Drift Identify
-
+/*
 let myJWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYngtMTIzIiwibmFtZSI6IlN0YXJrIiwiaWF0IjoxNTE2MjM5MDIyfQ.N46zloUkgTCqpJtyVcJGqVyfsRmuT7-p7W71sp-z66I';
 //drift.identify("1234-abcd", {
   drift.identify("abx-123", {
@@ -34,7 +34,7 @@ let myJWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYngtMTIzIiwibmFtZS
   Name: 'Stark',
   firstName: "Stark",
   lastName: "Samoyed"
-})//, { userJwt: myJWT });
+})//, { userJwt: myJWT });*/
 
 drift.load('y9vf8wusrym9');
 
