@@ -35,6 +35,9 @@ let myJWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYngtMTIzIiwibmFtZS
   firstName: "Stark",
   lastName: "Samoyed"
 })//, { userJwt: myJWT });*/
+drift('config', {
+  iframeSandbox: 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms'
+})
 
 drift.load('y9vf8wusrym9');
 
