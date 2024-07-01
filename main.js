@@ -1,7 +1,7 @@
 //<!-- Start of Async Drift Code - English -->
 
 "use strict";
-
+window.drift_iframe_sandbox = 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms'
 !function LoadDriftWidget() {
   var t = window.driftt = window.drift = window.driftt || [];
   if (!t.init) {
@@ -39,13 +39,6 @@ let myJWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYngtMTIzIiwibmFtZS
 
 drift.load('y9vf8wusrym9');
 
-drift.on('ready',function(api, payload) {
-  console.log("Testing config")
-
-drift('config', {
-  iframeSandbox: 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms'
-})
-})
 /*
 drift.on('ready',function(api, payload) {
   drift.api,widget.show();
