@@ -25,7 +25,7 @@ window.drift_iframe_sandbox = 'allow-scripts allow-same-origin allow-popups allo
 drift.SNIPPET_VERSION = '0.3.1';
 
 //Drift Identify
-
+/*
 let myJWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYngtMTIzIiwibmFtZSI6IlN0YXJrIiwiaWF0IjoxNTE2MjM5MDIyfQ.N46zloUkgTCqpJtyVcJGqVyfsRmuT7-p7W71sp-z66I';
 //drift.identify("1234-abcd", {
   drift.identify("abx-123", {
@@ -35,7 +35,7 @@ let myJWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYngtMTIzIiwibmFtZS
   firstName: "Stark",
   lastName: "Samoyed"
 }), { userJwt: myJWT };
-
+*/
 
 drift.load('y9vf8wusrym9');
 
