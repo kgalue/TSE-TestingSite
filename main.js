@@ -25,15 +25,15 @@ window.drift_iframe_sandbox = 'allow-scripts allow-same-origin allow-popups allo
 drift.SNIPPET_VERSION = '0.3.1';
 
 //Drift Identify
-
-let myJWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYngtMTIzIiwibmFtZSI6IlN0YXJrIiwiaWF0IjoxNTE2MjM5MDIyfQ.N46zloUkgTCqpJtyVcJGqVyfsRmuT7-p7W71sp-z66I';
+let myJWT = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MjI4OTAwODEsImV4cCI6MTc1NDQyNjA4MSwiYXVkIjoiIiwic3ViIjoieHlzLWxzIn0.PHpsy4GUcz_ORXrAjb54EvnvtFF6vnshIWjaexUl8YQ'
+//let myJWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYngtMTIzIiwibmFtZSI6IlN0YXJrIiwiaWF0IjoxNTE2MjM5MDIyfQ.N46zloUkgTCqpJtyVcJGqVyfsRmuT7-p7W71sp-z66I';
 //drift.identify("1234-abcd", {
-  drift.identify("abx-123", {
+  drift.identify("xys-test", {
   has_consent: true,  
-  email: 'starkdrifty@test.com',
-  Name: 'Stark',
-  firstName: "Stark",
-  lastName: "Samoyed"
+  email: 'lunastar@drift.com',
+  Name: 'Luna',
+  firstName: "Luna",
+  lastName: "Star"
 }), { userJwt: myJWT };
 
 
