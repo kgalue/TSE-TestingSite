@@ -34,6 +34,12 @@
   }();
   drift.SNIPPET_VERSION = '0.3.1';
   drift.load('rhfnkn45i93k');
+
+  window.drift.api.startInteraction({
+	interactionId: 103504, //(number, required) The interaction ID tied to the playbook to be fired,
+  goToConversation: false, //(boolean, default: true) Determines if the playbook should auto-expand the chat when fired. Set this to false if you want the playbook to show a preview message instead of popping open.
+  replaceActiveConversation: true //(boolean, default: true) Determines if the playbook should replace an already existing conversation. Set to false if you do not want the playbook fired over an existing conversation.
+});
   </script>
   <!-- End of Async Drift Code -->
    
