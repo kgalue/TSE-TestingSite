@@ -24,7 +24,9 @@ window.drift_iframe_sandbox = 'allow-scripts allow-same-origin allow-popups allo
 }();
 drift.SNIPPET_VERSION = '0.3.1';
 
-//Drift Identify
+//Drift Identify - KARLA 
+
+/*
 let myJWT = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3MjI4OTAwODEsImV4cCI6MTc1NDQyNjA4MSwiYXVkIjoiIiwic3ViIjoieHlzLWxzIn0.PHpsy4GUcz_ORXrAjb54EvnvtFF6vnshIWjaexUl8YQ'
 //let myJWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYngtMTIzIiwibmFtZSI6IlN0YXJrIiwiaWF0IjoxNTE2MjM5MDIyfQ.N46zloUkgTCqpJtyVcJGqVyfsRmuT7-p7W71sp-z66I';
 //drift.identify("1234-abcd", {
@@ -34,16 +36,22 @@ let myJWT = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aW
   Name: 'Luna',
   firstName: "Luna",
   lastName: "Star"
-}), { userJwt: myJWT };
+}), { userJwt: myJWT };*/
 
+//Goldcast Identify
+drift.identify("xys-test", {
+  email: 'kashish+3oct@goldcast.io',
+  name: 'Kashish'
+})
 
-drift.load('y9vf8wusrym9');
+drift.load('s3f2nx2vx5sb');
+//drift.load('y9vf8wusrym9');
 
 /*
 drift.on('ready',function(api, payload) {
   drift.api,widget.show();
 })*/
-
+/*
 window.drift.on("conversation:playbookFired", function(data) {
   console.log("Playbook fired: " + JSON.stringify(data))
 })
@@ -73,7 +81,7 @@ window.drift.on("scheduling:meetingBooked", function(data) {
   drift.api.setUserAttributes({
   _classification: "Fastlane - meeting booked"
 })
-});
+});*/
 
 
 //LoadDriftWidget.init();
