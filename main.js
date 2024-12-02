@@ -38,14 +38,7 @@ let myJWT = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aW
   lastName: "Star"
 }), { userJwt: myJWT };*/
 
-//Goldcast Identify
-drift.identify("xys-test", {
-  email: 'kashish+3oct@goldcast.io',
-  name: 'Kashish'
-})
-
-drift.load('s3f2nx2vx5sb');
-//drift.load('y9vf8wusrym9');
+drift.load('y9vf8wusrym9');
 
 /*
 drift.on('ready',function(api, payload) {
