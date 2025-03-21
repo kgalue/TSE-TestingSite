@@ -25,8 +25,33 @@
         hbspt.forms.create({
         region: "na1",
         portalId: "8895416",
-        formId: "7649e5b7-6565-43b1-a2b6-09203fd3465c"
-        });
+        formId: "7649e5b7-6565-43b1-a2b6-09203fd3465c",
+        onFormSubmit: function(form) {
+          var firstName = document.querySelector('input[name="firstname"]').value;
+          var lastName = document.querySelector('input[name="lastname"]').value;
+          var email = document.querySelector('input[name="email"]').value;
+       
+        var formData = [
+            { 'firstname': firstName },
+            { 'lastname': lastName },
+            { 'email': email }
+        ];
+        console.log("oh boy")
+        console.log(formData);
+        drift.api.stageFormData(formData);
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
     </script>
 
     <script>
